@@ -1,0 +1,156 @@
+body {
+  background-color: #1e555c;
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: "Righteous", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  gap: 1.5rem;
+}
+
+.main-title {
+  font-size: 2.5rem;
+}
+
+.length-controls {
+  display: flex;
+  gap: 3rem;
+}
+
+.length-control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.length-control-arrow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.btn-level {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.btn-level:hover {
+  color: #a50d0d;
+}
+
+.btn-level:hover i {
+  font-size: 1.3rem;
+}
+
+.btn-level-arrow {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+#break-length,
+#session-length {
+  font-size: 1.8rem;
+  margin: 0.5rem 0;
+}
+
+.timer {
+  border: 7px solid #13353a;
+  width: 25rem;
+  height: 10rem;
+  border-radius: 1.8rem;
+  position: relative;
+}
+
+.timer-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#timer-label {
+  font-size: 1.5rem;
+}
+
+#time-left {
+  font-size: 3rem;
+  font-family: inherit;
+  font-weight: bold;
+}
+
+.timer-control {
+  display: flex;
+  gap: 1rem;
+}
+
+.timer-control button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.timer-control button:hover {
+  color: #a50d0d;
+}
+
+.timer-control button:hover i {
+  font-size: 1.7rem;
+}
+
+.timer-control button i {
+  font-size: 1.2rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  body {
+    font-size: 1.2rem;
+  }
+
+  .length-controls {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .timer {
+    width: 90%;
+  }
+}
+
+.author {
+  color: #8b6060;
+}
+
+.author-name {
+  color: #619299;
+}
+.author-name:hover {
+  color: #c0dce0;
+}
+
+@media (max-width: 576px) {
+  .main-title {
+    font-size: 2rem;
+  }
+
+  .timer {
+    height: 8.75rem;
+  }
+
+  .timer-control button i {
+    font-size: 1rem;
+  }
+}
